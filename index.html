@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abhay | Developer from Haridwar</title>
+<title>Abhay | Developer Haridwar</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -66,7 +66,7 @@ h1,h2,h3{font-family:'Space Grotesk',sans-serif}
 </div>
 
 <script>
-const texts=["Python & Web Developer","AI/ML Enthusiast","From Haridwar, Uttarakhand"];
+const texts=["Python & Web Developer","AI/ML Enthusiast"," Haridwar, Uttarakhand"];
 let i=0,j=0,del=false;
 function loop(){let t=texts[i];let el=document.getElementById("type");el.textContent=t.substring(0,j);if(!del&&j<t.length)j++;else if(del&&j>0)j--;if(j==t.length){del=true;setTimeout(loop,1200);return}if(j==0&&del){del=false;i=(i+1)%texts.length}setTimeout(loop, del?40:80)}loop();
 </script>
