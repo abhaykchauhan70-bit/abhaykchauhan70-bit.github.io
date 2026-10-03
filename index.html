@@ -1,40 +1,73 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abhay - Developer</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhay | Developer from Haridwar</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,Arial}
-body{background:#080808;color:#fff;line-height:1.6}
-.wrap{max-width:950px;margin:0 auto;padding:30px 20px}
-h1{font-size:44px;margin-top:40px} span{color:#00ff88}
-.p{color:#999;margin-top:10px;font-size:18px}
-.btn{display:inline-block;margin-top:20px;padding:12px 22px;background:#00ff88;color:#000;border-radius:8px;text-decoration:none;font-weight:700;margin-right:10px}
-h2{margin-top:60px;font-size:28px;border-left:4px solid #00ff88;padding-left:12px}
-.card{background:#141414;border:1px solid #222;padding:22px;border-radius:14px;margin-top:18px}
-.card h3{color:#00ff88;margin-bottom:8px}.card p{color:#aaa}
-.link{color:#00ff88;text-decoration:none;font-weight:600}
-.tag{display:inline-block;background:#1f1f1f;border:1px solid #2a2a2a;padding:6px 12px;border-radius:20px;margin:5px 5px 0 0;color:#ccc;font-size:14px}
-footer{text-align:center;color:#555;margin:70px 0 20px}
-</style></head><body>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#070709;color:#e8e8e8;font-family:'Inter',sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:40px 22px;position:relative}
+.blob{position:fixed;width:500px;height:500px;background:radial-gradient(circle,rgba(0,255,136,0.15),transparent 70%);top:-100px;left:-100px;filter:blur(40px);pointer-events:none}
+.blob2{position:fixed;width:400px;height:400px;background:radial-gradient(circle,rgba(99,102,241,0.15),transparent 70%);bottom:0;right:0;filter:blur(40px);pointer-events:none}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:70px}
+.logo{font-weight:700;font-size:20px}.logo span{color:#00ff88}
+.hero h1{font-size:56px;line-height:1.1;letter-spacing:-1px}
+.hero h1 span{background:linear-gradient(90deg,#00ff88,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.type{color:#999;margin-top:14px;font-size:20px;min-height:28px}
+.btns{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:13px 24px;border-radius:10px;text-decoration:none;font-weight:600;transition:0.2s;display:inline-block}
+.btn1{background:#00ff88;color:#000}.btn1:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,255,136,0.3)}
+.btn2{background:#1a1a1e;border:1px solid #2a2a2e;color:#fff}.btn2:hover{background:#222}
+.sec{margin-top:80px}
+.sec h2{font-size:30px;margin-bottom:24px;display:flex;align-items:center;gap:10px}
+.sec h2::before{content:'';width:6px;height:28px;background:#00ff88;border-radius:10px;display:inline-block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{background:linear-gradient(180deg,#14141a,#101015);border:1px solid #22222a;border-radius:18px;padding:24px;transition:0.3s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-5px);border-color:#00ff88;box-shadow:0 15px 40px rgba(0,0,0,0.5)}
+.card h3{color:#fff;font-size:19px;margin-bottom:8px}.card h3 em{color:#00ff88;font-style:normal}
+.card p{color:#9a9aa3;font-size:14.5px;line-height:1.6;margin-bottom:14px}
+.link{color:#00ff88;font-size:14px;text-decoration:none;font-weight:600}.link:hover{text-decoration:underline}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tag{background:#1e1e24;border:1px solid #2a2a30;padding:7px 14px;border-radius:100px;font-size:13px;color:#bbb}
+.footer{margin-top:80px;padding:30px 0;border-top:1px solid #1a1a1e;text-align:center;color:#666;font-size:14px}
+@media(max-width:600px){.hero h1{font-size:36px}}
+</style>
+</head>
+<body>
+<div class="blob"></div><div class="blob2"></div>
 <div class="wrap">
-<h1>Hi, I'm <span>Abhay</span></h1>
-<p class="p">Developer from Haridwar, Uttarakhand | Python & Web Developer</p>
-<a class="btn" href="https://github.com/abhaykchauhan70-bit" target="_blank">GitHub</a>
-<a class="btn" style="background:#fff" href="https://www.linkedin.com/in/abhay-rajput-774862324/" target="_blank">LinkedIn</a>
+<div class="nav"><div class="logo">Abhay<span>.dev</span></div><div style="color:#666;font-size:14px">Haridwar, Uttarakhand</div></div>
 
+<div class="hero">
+<h1>Hi, I'm <span>Abhay</span><br>Building AI Products.</h1>
+<div class="type" id="type"></div>
+<div class="btns">
+<a class="btn btn1" href="https://github.com/abhaykchauhan70-bit" target="_blank">View GitHub →</a>
+<a class="btn btn2" href="https://www.linkedin.com/in/abhay-rajput-774862324/" target="_blank">LinkedIn</a>
+</div>
+</div>
+
+<div class="sec">
 <h2>Projects</h2>
+<div class="grid">
+<div class="card"><h3><em>VisionGuard</em> - AI</h3><p>Real-Time Video Intelligence. YOLOv8 + CNN-LSTM with Grad-CAM explainability, FastAPI, Dockerized.</p><a class="link" href="https://github.com/abhaykchauhan70-bit/VisionGuard-AI" target="_blank">GitHub →</a></div>
+<div class="card"><h3><em>AURA</em> - Autonomous Agent</h3><p>Self-planning AI agent with tool registry, CSV & document analysis. FastAPI + Next.js + PostgreSQL.</p><a class="link" href="https://github.com/abhaykchauhan70-bit/AURA-_AI" target="_blank">GitHub →</a></div>
+<div class="card"><h3><em>LibraryHub</em></h3><p>Full digital library system - issue/return, fine calc, student management & admin dashboard.</p><a class="link" href="https://github.com/abhaykchauhan70-bit/libraryhub" target="_blank">GitHub →</a></div>
+<div class="card"><h3>Registration Portal</h3><p>College programme registration system with form validation & database management.</p><a class="link" href="https://github.com/abhaykchauhan70-bit/registration-site" target="_blank">GitHub →</a></div>
+<div class="card"><h3>First Project</h3><p>Where it all started - my first steps into coding and Python development journey.</p><a class="link" href="https://github.com/abhaykchauhan70-bit/first_project" target="_blank">GitHub →</a></div>
+</div>
+</div>
 
-<div class="card"><h3>first_project</h3><p>My first Python project - beginning of my development journey.</p><p style="margin-top:10px"><a class="link" href="https://github.com/abhaykchauhan70-bit/first_project" target="_blank">View on GitHub -></a></p></div>
+<div class="sec"><h2>Skills</h2><div class="tags"><div class="tag">Python</div><div class="tag">FastAPI</div><div class="tag">YOLOv8</div><div class="tag">OpenCV</div><div class="tag">AI / ML</div><div class="tag">MySQL</div><div class="tag">Docker</div><div class="tag">HTML / CSS</div><div class="tag">JavaScript</div><div class="tag">Git</div></div></div>
 
-<div class="card"><h3>libraryhub</h3><p>Digital Library Management System with book issue/return, search, student management. Built with CSS/HTML/JS + Backend.</p><p style="margin-top:10px"><a class="link" href="https://github.com/abhaykchauhan70-bit/libraryhub" target="_blank">View on GitHub -></a></p></div>
+<div class="footer">© 2026 Abhay • Crafted in Haridwar, Uttarakhand • abhaykchauhan70-bit.github.io</div>
+</div>
 
-<div class="card"><h3>AURA- AI</h3><p>Autonomous Unified Reasoning Agent - AI agent with task planning, tool registry, document analysis.</p><p style="margin-top:10px"><a class="link" href="https://github.com/abhaykchauhan70-bit/AURA-_AI" target="_blank">View on GitHub -></a></p></div>
-
-<div class="card"><h3>VisionGuard-AI</h3><p>Real-Time Video Intelligence System - YOLOv8 object detection & activity recognition with Grad-CAM explainability.</p><p style="margin-top:10px"><a class="link" href="https://github.com/abhaykchauhan70-bit/VisionGuard-AI" target="_blank">View on GitHub -></a></p></div>
-
-<div class="card"><h3>registration-site</h3><p>Student Registration Website - College programme registration portal built with HTML.</p><p style="margin-top:10px"><a class="link" href="https://github.com/abhaykchauhan70-bit/registration-site" target="_blank">View on GitHub -></a></p></div>
-
-<h2>Skills</h2><div style="margin-top:15px"><div class="tag">Python</div><div class="tag">CSS</div><div class="tag">HTML</div><div class="tag">JavaScript</div><div class="tag">AI/ML</div><div class="tag">Git</div></div>
-
-<h2>Contact</h2><div class="card"><p>Location: Haridwar, Uttarakhand, India</p><p>LinkedIn: linkedin.com/in/abhay-rajput-774862324</p><p>GitHub: github.com/abhaykchauhan70-bit</p></div>
-
-<footer>© 2026 Abhay. Built from Haridwar</footer></div></body></html>
+<script>
+const texts=["Python & Web Developer","AI/ML Enthusiast","From Haridwar, Uttarakhand"];
+let i=0,j=0,del=false;
+function loop(){let t=texts[i];let el=document.getElementById("type");el.textContent=t.substring(0,j);if(!del&&j<t.length)j++;else if(del&&j>0)j--;if(j==t.length){del=true;setTimeout(loop,1200);return}if(j==0&&del){del=false;i=(i+1)%texts.length}setTimeout(loop, del?40:80)}loop();
+</script>
+</body></html>
